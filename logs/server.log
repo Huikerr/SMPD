@@ -1,0 +1,41 @@
+[2022-05-14 17:21:42,106][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:22:20,892][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:22:21,762][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:23:02,641][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:23:03,519][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:23:32,713][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:23:33,580][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:23:41,373][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:23:42,240][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:24:17,921][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:24:18,793][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:24:28,760][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:24:29,603][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:24:31,917][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:24:32,777][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:25:04,124][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:25:04,995][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:25:20,224][django.request.log_response():224] [WARNING] Not Found: /
+[2022-05-14 17:25:44,029][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\application\urls.py changed, reloading.
+[2022-05-14 17:25:44,896][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:25:45,282][django.request.log_response():224] [WARNING] Not Found: /admin/smpd/camera/add/
+[2022-05-14 17:25:46,035][django.request.log_response():224] [WARNING] Not Found: /admin/smpd/camera/add/
+[2022-05-14 17:25:46,686][django.request.log_response():224] [WARNING] Not Found: /admin/smpd/camera/add/
+[2022-05-14 17:25:50,497][django.request.log_response():224] [WARNING] Not Found: /
+[2022-05-14 17:25:57,913][django.request.log_response():224] [WARNING] Not Found: /
+[2022-05-14 17:26:01,206][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\application\urls.py changed, reloading.
+[2022-05-14 17:26:02,067][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:27:38,953][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:27:39,952][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:28:03,813][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:28:04,690][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:28:20,091][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:28:20,980][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 17:28:57,715][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 17:28:58,581][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 18:18:33,114][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\admin.py changed, reloading.
+[2022-05-14 18:18:34,016][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 18:22:08,706][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\application\settings.py changed, reloading.
+[2022-05-14 18:22:09,546][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
+[2022-05-14 18:23:35,852][django.utils.autoreload.trigger_reload():251] [INFO] D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\models.py changed, reloading.
+[2022-05-14 18:23:36,752][django.utils.autoreload.run_with_reloader():637] [INFO] Watching for file changes with StatReloader
