@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查看摄像头</title>
+    <link href="{% static 'smpd/css/global.css' %}" rel="stylesheet">
+    <link href="{% static 'smpd/css/view.css' %}" rel="stylesheet">
+    <link href="{% static 'smpd/layui/css/layui.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<div class="div-in-center video">
+    <img src="{{ url }}" class="div-in-center">
+</div>
+<!-- <script src="{% static 'smpd/layui/layui.js' %}"></script> -->
+</body>
+</html>

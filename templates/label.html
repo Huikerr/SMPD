@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标注</title>
+    <link rel="stylesheet" href="{% static 'smpd/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'smpd/css/label.css' %}">
+    <script src="{% static 'smpd/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'smpd/js/index.js' %}"></script>
+</head>
+
+<body>
+    <div class="button-wrap">
+        <button class="btn btn-default" onclick="setMode('RECT')">矩形</button>
+        <button class="btn btn-default" onclick="destroy()">清除</button>
+        <button class="btn btn-default" onclick="save()">保存</button>
+    </div>
+    <form id="Form" action="{{ url }}" method="post" style="display:none">
+        {% csrf_token %}
+        <input id="content" type="text" name="label" value="label">
+        <input id="id" type="text" name="id" value="{{ id }}">
+    </form>
+    <div id="map">
+    </div>
+    <script>
+        let drawingStyle = {}; // 绘制过程中样式
+        const dpr = window.devicePixelRatio;
+        const images = {src: '{{ picture }}', zoom: 2000, center: {x: 640, y: 360}, width: 1280, height: 720}
+        // 初始化对象
+        const gMap = new AILabel.Map('map', {
+            center: {x: 640, y: 360}, // 为了让图片居中
+            zoom: 2000,
+            mode: 'PAN', // 绘制线段
+            refreshDelayWhenZooming: true, // 缩放时是否允许刷新延时，性能更优
+            zoomWhenDrawing: true,
+            panWhenDrawing: true
+        });
+        // 加载图片
+        loadImage()
+
+        gMap.events.on('drawDone', (type, data, data1) => {
+            console.log('--data--', data);
+            const relatedTextId = `label-text-id-${+new Date()}`;
+            const relatedDeleteMarkerId = `label-marker-id-${+new Date()}`;
+            if (type === 'RECT') {
+                // 添加feature
+                const rectFeature = new AILabel.Feature.Rect(
+                    `${+new Date()}`, // id
+                    data, // shape
+                    {name: '矢量图形', textId: relatedTextId, deleteMarkerId: relatedDeleteMarkerId}, // props
+                    drawingStyle // style
+                );
+                gFirstFeatureLayer.addFeature(rectFeature);
+                // 添加feature标签名
+                const {x: ltx, y: lty} = data;
+                const gFirstText = new AILabel.Text(
+                    relatedTextId, // id
+                    {text: '屏幕', position: {x: ltx, y: lty}, offset: {x: 0, y: 0}}, // shape, 左上角
+                    {name: '第一个文本对象'}, // props
+                    {fillStyle: '#F4A460', strokeStyle: '#D2691E', background: true, globalAlpha: 1, fontColor: '#0f0'} // style
+                );
+                gFirstTextLayer.addText(gFirstText);
+            }
+        });
+
+        gMap.events.on('featureSelected', feature => {
+            // 高亮选中feature
+            gMap.setActiveFeature(feature);
+            const markerId = feature.props.deleteMarkerId;
+            const textId = feature.props.textId;
+
+            const mappedMarker = gMap.markerLayer.getMarkerById(markerId);
+            if (mappedMarker) {
+                return;
+            }
+
+            // 添加delete-icon
+            const gFirstMarker = new AILabel.Marker(
+                markerId, // id
+                {
+                    src: './delete.png',
+                    position: feature.getPoints()[1], // 矩形右上角
+                    offset: {
+                        x: -20,
+                        y: -4
+                    }
+                }, // markerInfo
+                {name: '第一个marker注记'} // props
+            );
+            gFirstMarker.events.on('click', marker => {
+                // 首先删除当前marker
+                gMap.markerLayer.removeMarkerById(marker.id);
+                // 删除对应text
+                gFirstTextLayer.removeTextById(textId);
+                // 删除对应feature
+                gFirstFeatureLayer.removeFeatureById(feature.id);
+            });
+
+            gMap.markerLayer.addMarker(gFirstMarker);
+        });
+        gMap.events.on('featureUnselected', feature => {
+            gMap.setActiveFeature(null);
+            gMap.markerLayer.removeMarkerById(feature.props.deleteMarkerId);
+        });
+        gMap.events.on('featureUpdated', (feature, shape) => {
+            feature.updateShape(shape);
+
+            const markerId = feature.props.deleteMarkerId;
+            const textId = feature.props.textId;
+            // 更新marker位置
+            const targetMarker = gMap.markerLayer.getMarkerById(markerId);
+            targetMarker.updatePosition(feature.getPoints()[1]);
+            // 更新text位置
+            const targetText = gFirstTextLayer.getTextById(textId);
+            console.log('--targetText--', targetText);
+            targetText.updatePosition(feature.getPoints()[0]);
+        });
+
+        // feature-层
+        const gFirstFeatureLayer = new AILabel.Layer.Feature(
+            'first-layer-feature', // id
+            {name: '第一个矢量图层'}, // props
+            {zIndex: 10} // style
+        );
+        gMap.addLayer(gFirstFeatureLayer);
+
+        // text-层
+        const gFirstTextLayer = new AILabel.Layer.Text(
+            'first-layer-text', // id
+            {name: '第一个文本图层'}, // props
+            {zIndex: 12, opacity: 1} // style
+        );
+        gMap.addLayer(gFirstTextLayer);
+
+        function setMode(mode) {
+            gMap.setMode(mode);
+            // 后续对应模式处理
+            switch (gMap.mode) {
+                case 'PAN': {
+                    break;
+                }
+                case 'RECT': {
+                    drawingStyle = {strokeStyle: '#00f', lineWidth: 1}
+                    gMap.setDrawingStyle(drawingStyle);
+                    break;
+                }
+                default:
+                    break;
+            }
+        }
+        function loadImage() {
+            gFirstImageLayer = new AILabel.Layer.Image(
+                'first-layer-image', // id
+                {
+                    src: images.src,
+                    width: images.width,
+                    height: images.height,
+                    position: { // 左上角相对中心点偏移量
+                        x: 0,
+                        y: 0
+                    },
+                    grid: { // 3 * 3
+                        columns: [{color: '#9370DB'}, {color: '#FF6347'}],
+                        rows: [{color: '#9370DB'}, {color: '#FF6347'}]
+                    }
+                }, // imageInfo
+                {name: '第一个图片图层'}, // props
+                {zIndex: 5} // style
+            );
+            gMap.addLayer(gFirstImageLayer);
+            gMap.centerAndZoom({center: images.center, zoom: images.zoom});
+        }
+        window.onresize = function() {
+            gMap && gMap.resize();
+        }
+        // 保存数据
+        function save() {
+            const data = []
+            const allFeatures = gFirstFeatureLayer.getAllFeatures();
+            for (j = 0; j < allFeatures.length; j++){
+                tem = allFeatures[j].shape
+                data[j] = {"id": j, "x": Math.round(tem.x), "y": Math.round(tem.y),"w": Math.round(tem.width), "h": Math.round(tem.height)}
+            }
+            document.getElementById("content").value = JSON.stringify(data);
+            document.getElementById("Form").submit();
+        }
+        // 清除绘制线
+        function destroy() {
+            gFirstFeatureLayer.getAllFeatures() = []
+            // gMap.destroy();
+        }
+    </script>
+</body>
+
+</html>

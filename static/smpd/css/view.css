@@ -1,0 +1,12 @@
+
+
+body {
+    background-image: url("/static/smpd/image/django.jpg");
+}
+
+.video {
+    height: 800px;
+    width: 1800px;
+    /* background-color: blue; */
+}
+

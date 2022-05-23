@@ -1,0 +1,49 @@
+body {
+    padding: 10px 20px;
+}
+.button-wrap {
+    padding-bottom: 10px;
+}
+#map {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+    border: 1px dashed #ccc;
+}
+.zoom-icon-wrapper {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+.zoom-icon-plus {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    border: 3px solid #6495ED;
+    font-size: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #FF8C00;
+    cursor: pointer;
+}
+.zoom-icon-plus:hover {
+    border-color: #4169E1;
+}
+.zoom-icon-minus {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    border: 3px solid #6495ED;
+    font-size: 25px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #FF8C00;
+    cursor: pointer;
+}
+.zoom-icon-minus:hover {
+    border-color: #4169E1;
+}

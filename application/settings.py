@@ -1,32 +1,35 @@
 from pathlib import Path
-import os, sys
+import os,sys
 
 BASE_DIR = Path(__file__).resolve().parent.parent   # 当前目录地址
-sys.path.insert(0, os.path.join(BASE_DIR, "apps"))  # apps加入环境
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 SECRET_KEY = 'django-insecure-nomdt7&@f=trl6)d)ti&i-5q+*4#)uob^09huy01g3#1d2t)%!'
 
-DEBUG = True
+DEBUG = False
 
-AUTH_USER_MODEL = 'smpd.UserProfile'
+AUTH_USER_MODEL = 'smpd.UserProfile'    # users是app名，User是models中的类名
 
-ALLOWED_HOSTS = ['*' ]
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
-    'simpleui',
+    # 'simpleui',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',                      # 注册跨域解决框架
     'rest_framework',
     'apps.smpd',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',            # 跨域中间件处理
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -85,10 +88,17 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+# STATICFILES_DIRS = [
+#   os.path.join(BASE_DIR, 'static'), ##修改地方
+# ]
+
+
+
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')# 设置文件上传的目录和外部访问的路径
-MEDIA_URL = 'media/'
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -171,3 +181,27 @@ LOGGING = {
     },
   }
 }
+
+"""
+simpleui 设置
+"""
+SIMPLEUI_HOME_PAGE = 'http://192.168.1.105:8080'                            # 首页配置
+SIMPLEUI_HOME_TITLE = '屏幕监测平台'                                        # 首页标题
+SIMPLEUI_HOME_ICON = 'fa fa-user'                                           # 首页图标,支持element-ui和fontawesome的图标
+SIMPLEUI_INDEX = 'https://www.88cto.com'                                    # 首页-跳转地址
+SIMPLEUI_LOGO = 'https://avatars2.githubusercontent.com/u/13655483?s=60&v=4'# 自定义SIMPLEUI的Logo
+# SIMPLEUI_HOME_INFO = False                                                # 首页显示服务器、python、django、simpleui相关信息
+# SIMPLEUI_HOME_QUICK = False                                               # 首页显示快速操作
+# SIMPLEUI_HOME_ACTION = False                                              # 首页显示最近动作
+# SIMPLEUI_LOGIN_PARTICLES = False                                          # 登录页粒子动画，默认开启，False关闭
+SIMPLEUI_ANALYSIS = True                                                    # 让simpleui 不要收集相关信息
+
+
+
+
+# 解决 because its MIME type ('text/plain') is not executable, and strict MIME type
+#在settings.py末尾加入
+import mimetypes
+mimetypes.add_type('text/css', '.css')
+mimetypes.add_type('application/javascript', '.js')
+SECURE_CONTENT_TYPE_NOSNIFF = False

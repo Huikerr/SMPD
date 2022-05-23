@@ -1,6 +1,6 @@
-import os
+# import os
 
-from application.settings import BASE_DIR
+# from application.settings import BASE_DIR
 
 # ================================================= #
 # ************** 数据库 配置  ************** #

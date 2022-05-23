@@ -1,0 +1,2246 @@
+[2022-05-18 16:21:03,485][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 5, in label
+    data = request.data
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-18 19:18:49,365][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 5, in label
+    data = request.data.get("id")
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-18 20:13:11,286][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 49, in label
+    data = request.data
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-18 20:13:55,519][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 49, in label
+    data = request.data
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-18 20:17:52,970][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 49, in label
+    data = request.data.get('id')
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-18 20:18:07,575][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 49, in label
+    data = request.get('id')
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+[2022-05-18 20:28:08,934][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 53, in label
+    print(camera.rtsp)
+AttributeError: 'Camera' object has no attribute 'rtsp'
+[2022-05-18 20:51:25,615][django.request.log_response():224] [ERROR] Internal Server Error: /admin/smpd/camera/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.path
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.path
+[2022-05-18 21:18:10,246][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/view/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 64, in view
+    return render(request, 'view.html', SHR)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\context.py", line 268, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than StreamingHttpResponse.
+[2022-05-18 21:19:26,915][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/view/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 64, in view
+    return render(request, 'view.html', gen_frames(str(camera.rtsp)))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\context.py", line 268, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than generator.
+[2022-05-19 10:37:13,707][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/video/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 68, in video
+    camera = Camera.objects.get(id=data)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+[2022-05-19 10:55:39,453][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/video/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 68, in video
+    camera = Camera.objects.get(id=data)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+[2022-05-19 11:08:07,596][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/view/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 62, in view
+    return render(request, 'view.html', dict)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' + id' from ''http://127.0.0.1:8000/smpd/video/?id=' + id'
+[2022-05-19 11:08:19,392][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/view/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 62, in view
+    return render(request, 'view.html', dict)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' + id' from ''http://127.0.0.1:8000/smpd/video/?id=' + id'
+[2022-05-19 14:56:02,600][django.request.log_response():224] [ERROR] Internal Server Error: /admin/smpd/camera/1/change/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1586, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1099, in save_model
+    obj.save()
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\models.py", line 31, in save
+    super(Model, self).save(*args, **kwargs)
+AttributeError: 'super' object has no attribute 'save'
+[2022-05-19 16:07:23,153][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 55, in label
+    return render(request, 'label.html', dict)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' static' from 'load static'
+[2022-05-19 16:07:26,697][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 55, in label
+    return render(request, 'label.html', dict)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' static' from 'load static'
+[2022-05-19 17:02:14,433][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 52, in label
+    print(request.type)
+AttributeError: 'WSGIRequest' object has no attribute 'type'
+[2022-05-19 17:26:27,103][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 53, in label
+    camera = Camera.objects.get(id=request.GET.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:27:02,513][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 60, in label
+    return render(request, 'label.html', dict)
+UnboundLocalError: local variable 'dict' referenced before assignment
+[2022-05-19 17:29:56,194][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:30:47,396][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:30:50,302][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:31:39,384][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 54, in label
+    camera = Camera.objects.get(id=request.GET.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:03,944][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:07,738][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:09,840][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:10,471][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:10,696][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:32:10,897][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 17:34:54,172][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view smpd.views.save didn't return an HttpResponse object. It returned None instead.
+[2022-05-19 18:53:43,823][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 63, in save
+    data = request.data
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-19 19:00:54,495][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 63, in save
+    data = request.data
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-05-19 19:01:14,922][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 65, in save
+    print(request.POST['id'])
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'id'
+[2022-05-19 19:04:02,682][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 67, in save
+    return render(request, '/smpd/camera')
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /smpd/camera
+[2022-05-19 19:04:28,443][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 67, in save
+    return render(request, '/smpd/camera', data)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /smpd/camera
+[2022-05-19 19:36:01,738][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 67, in save
+    return render(request, '/smpd/camera', data)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /smpd/camera
+[2022-05-19 19:43:38,297][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/save/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 68, in save
+    return render(request, '/smpd/camera', data)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /smpd/camera
+[2022-05-19 19:43:46,325][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view smpd.views.label didn't return an HttpResponse object. It returned None instead.
+[2022-05-19 19:44:50,973][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view smpd.views.label didn't return an HttpResponse object. It returned None instead.
+[2022-05-19 19:46:35,304][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 63, in label
+    return render(request, 'label.html', dict)
+UnboundLocalError: local variable 'dict' referenced before assignment
+[2022-05-19 19:48:39,693][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 61, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 19:49:09,821][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 62, in label
+    camera = Camera.objects.get(id=request.POST.get('id'))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+smpd.models.Camera.DoesNotExist: Camera matching query does not exist.
+[2022-05-19 20:12:34,769][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 67, in label
+    data = str_trasfer_dict(ret)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 95, in str_trasfer_dict
+    new_dict[line[0]]=line[1]
+IndexError: list index out of range
+[2022-05-19 20:24:40,840][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/label/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 31, in label
+    with open(os.path.join(settings.MEDIA_ROOT,camera.path,'config.yaml', 'w')) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Huicheng\\Desktop\\2022Task\\ITEMS\\SMPD\\media/camera/27f8d09f-8b68-4dfa-83b6-951dc04876ea\\config.yaml\\w'
+[2022-05-19 21:22:38,516][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 21:22:48 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 28, in monitor
+    Thread(target=D_screen(), args=(cameras[i].path, ), )
+TypeError: D_screen() missing 1 required positional argument: 'path'
+[2022-05-19 22:25:01,158][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:25:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:25:11,155][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:25:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:25:21,162][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:25:31 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:25:31,155][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:25:41 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:25:41,157][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:25:51 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:25:51,157][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:01,162][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:11,156][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:21,152][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:31 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:31,151][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:41 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:41,158][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:26:51 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:26:51,151][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:01,164][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:11,155][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:21,166][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:31 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:31,161][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:41 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:41,157][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:27:51 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:27:51,154][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:28:01,154][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 57, in monitor
+    'Thread-{}'.format(str(j)).stop()
+AttributeError: 'str' object has no attribute 'stop'
+[2022-05-19 22:28:17,026][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:27 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:28:27,029][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:37 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:28:37,034][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:47 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:28:47,022][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:28:57 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:28:57,020][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:29:07 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:29:07,025][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:29:17 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:29:17,022][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:29:27 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-19 22:29:27,024][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-19 22:29:37 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 55, in monitor
+    print(enumerate()[i].pid)
+AttributeError: '_MainThread' object has no attribute 'pid'
+[2022-05-20 09:21:02,204][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:21:12 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 63, in monitor
+    enumerate()[i].stop()
+AttributeError: 'Thread' object has no attribute 'stop'
+[2022-05-20 09:21:12,200][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:21:22 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 63, in monitor
+    enumerate()[i].stop()
+AttributeError: 'Thread' object has no attribute 'stop'
+[2022-05-20 09:44:17,140][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:44:27 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.terminate()
+AttributeError: 'Thread' object has no attribute 'terminate'
+[2022-05-20 09:44:27,154][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:44:37 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.terminate()
+AttributeError: 'Thread' object has no attribute 'terminate'
+[2022-05-20 09:44:49,768][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:44:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:44:59,775][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:09,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:19,760][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:29,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:39,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:49,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:45:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:45:59,761][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:09,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:19,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:29,779][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:39,770][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:49,757][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:46:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:46:59,758][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:09,765][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:19,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:29,761][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:39,768][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:49,762][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:47:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:47:59,778][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:09,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:19,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:29,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:39,766][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:49,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:48:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:48:59,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:09,769][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:19,766][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:29,770][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:39,759][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:49,770][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:49:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:49:59,762][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:09,772][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:19,769][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:29,766][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:39,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:49,762][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:50:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:50:59,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:09,774][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:19,756][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:29,770][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:39,754][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:49,756][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:51:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:51:59,755][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:09,758][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:19,765][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:29,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:39,771][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:49,769][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:52:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:52:59,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:09,769][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:19,759][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:29,761][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:39,769][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:49,756][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:53:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:53:59,766][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:09,771][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:19,765][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:29,762][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:39,765][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:49,767][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:54:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:54:59,761][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:09,759][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:19,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:29,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:39,760][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:49,760][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:55:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:55:59,764][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:56:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:56:09,763][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:56:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:56:19,771][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:56:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:56:29,765][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:56:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread.kill()
+AttributeError: 'Thread' object has no attribute 'kill'
+[2022-05-20 09:56:56,700][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:57:06 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\threading.py", line 963, in _stop
+    assert not lock.locked()
+AssertionError
+[2022-05-20 09:57:06,701][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:57:16 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\threading.py", line 963, in _stop
+    assert not lock.locked()
+AssertionError
+[2022-05-20 09:57:16,704][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:57:26 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\threading.py", line 963, in _stop
+    assert not lock.locked()
+AssertionError
+[2022-05-20 09:57:39,093][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:57:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:57:49,101][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:57:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:57:59,094][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:09,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:19,089][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:29,094][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:39,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:49,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:58:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:58:59,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:09,098][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:19,086][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:29,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:39,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:49,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 09:59:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 09:59:59,100][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:09,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:19,081][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:29,094][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:39,096][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:49,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:00:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:00:59,082][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:09,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:19,099][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:29,090][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:39,097][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:49,095][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:01:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:01:59,094][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:09,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:19,098][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:29,084][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:39,083][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:49,090][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:02:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:02:59,099][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:09,081][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:19,085][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:29,087][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:39,084][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:49,081][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:03:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:03:59,084][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:09,080][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:19,086][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:29,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:39,093][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:49,094][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:04:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:04:59,097][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:09,085][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:19,084][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:29,083][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:39,089][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:49 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:49,090][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:05:59 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:05:59,091][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:06:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:06:09,093][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:06:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:06:19,092][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:06:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:06:29,088][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:06:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:06:52,313][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:02 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:07:02,309][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:12 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:07:12,319][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:22 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:07:22,312][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:32 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:07:32,309][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:42 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:07:42,317][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:07:52 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:08:11,158][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:08:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:08:21,156][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:08:31 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:08:31,163][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:08:41 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:08:41,153][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:08:51 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:08:51,157][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:01,152][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:11,164][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:21,164][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:31 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:31,154][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:41 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:41,156][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:09:51 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-20 10:09:51,159][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], next run at: 2022-05-20 10:10:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 58, in monitor
+    thread._stop.set()
+AttributeError: 'function' object has no attribute 'set'
+[2022-05-21 18:16:27,695][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:00:10], paused)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 115, in monitor
+    print("当前运行线程:", enumerate())
+TypeError: enumerate() missing required argument 'iterable' (pos 1)
+[2022-05-23 10:25:56,293][django.request.log_response():224] [ERROR] Internal Server Error: /smpd/record/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\views.py", line 50, in record
+    return render(request, 'video.html', dict)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: video.html
+[2022-05-23 11:11:29,582][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:01:00], next run at: 2022-05-23 11:12:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.ip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 110, in monitor
+    for camera in cameras:
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.ip
+[2022-05-23 11:12:29,576][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:01:00], next run at: 2022-05-23 11:13:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.ip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 110, in monitor
+    for camera in cameras:
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.ip
+[2022-05-23 11:13:29,577][apscheduler.executors.default.run_job():131] [ERROR] Job "monitor (trigger: interval[0:01:00], next run at: 2022-05-23 11:14:29 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.ip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\Huicheng\Desktop\2022Task\ITEMS\SMPD\apps\smpd\urls.py", line 110, in monitor
+    for camera in cameras:
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.ip
+[2022-05-23 11:14:21,947][django.request.log_response():224] [ERROR] Internal Server Error: /admin/smpd/camera/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.ip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1794, in changelist_view
+    media = self.media + formset.media
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 436, in media
+    if self.forms:
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 157, in forms
+    for i in range(self.total_form_count())
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 132, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\models.py", line 586, in initial_form_count
+    return len(self.get_queryset())
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.ip
+[2022-05-23 11:14:25,067][django.request.log_response():224] [ERROR] Internal Server Error: /admin/smpd/camera/
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: tb_camera.ip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\contrib\admin\options.py", line 1794, in changelist_view
+    media = self.media + formset.media
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 436, in media
+    if self.forms:
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 157, in forms
+    for i in range(self.total_form_count())
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\formsets.py", line 132, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\forms\models.py", line 586, in initial_form_count
+    return len(self.get_queryset())
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Applications\Anaconda\envs\SMPD\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: tb_camera.ip
