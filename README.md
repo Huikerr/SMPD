@@ -1,15 +1,16 @@
-# 屏幕监测平台（SMPD）
+# <div style="text-align: center;font-size:28pt"><font face="黑体">屏幕监测平台（SMPD）</font></div>
+
+<div style="font-size:14pt">&emsp;&emsp;该平台为实现屏幕检测小项目,基本需求就是摄像头对准一排屏幕，后台获取屏幕信息，并对每个屏幕标定区域，然后进行检测，如果有某一台屏幕坏了，就提醒工作人员进行处理。</div>
 
 ## 一、技术栈
-
-``python==3.8``，``django==3.2.6``，``opencv-python==4.5.5.64``,``AILabel``
+`python==3.8`，`django==3.2.6`，`opencv-python==4.5.5.64`,`AILabel`
 
 登入账户：root
 登入密码：123456789
 
 ## 二、项目生成
 
-### 1  创建虚拟环境
+###  <font face="宋体体" style="font-size:16pt">1、创建虚拟环境</font>
 
 ```shell
 conda create -n SMPD python=3.8 # 创建虚拟环境
@@ -40,18 +41,7 @@ python manage.py migrate
 ## 三、文件结构
 
 
-
-
-
-
-
 ## 四、关键代码结构
-
-
-
-
-
-
 
 ## 五、项目打包
 
@@ -236,6 +226,3 @@ python -c "import django; print(django.__path__)"
 [1]:https://www.djangoproject.com/	"django官网"
 [2]:http://ailabel.com.cn/public/ailabel/api/index.html#1	"AILabel"
 [3]:https://blog.csdn.net/weixin_45543571/article/details/115705967	"关于在django框架中在admin页面下添加自定义按钮并实现功能"
-
-
-
