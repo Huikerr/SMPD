@@ -6,7 +6,7 @@ from django.contrib.auth.models import Group
 class CameraAdmin(admin.ModelAdmin):
     list_display = ('name',  'username', 'password', 'ip', 'port', 'status', 'view', 'label')
     list_per_page = 20
-    list_editable = ('username', 'password', 'ip', 'port', 'status')
+    list_editable = ('username', 'password', 'ip', 'port')
     search_fields = ('name', 'id')
 
     # # 自定义按钮
